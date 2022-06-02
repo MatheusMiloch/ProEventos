@@ -80,7 +80,7 @@ namespace ProEventos.Application
             }
         }
 
-        public async Task<Evento> GetAllEventoByIdAsync(int eventoId, bool includePalestrantes = false)
+        public async Task<Evento> GetEventoByIdAsync(int eventoId, bool includePalestrantes = false)
         {
             try
             {
@@ -112,7 +112,7 @@ namespace ProEventos.Application
             }
         }
 
-        public async Task<Evento[]> GetAllEventosByTemaAsync(string tema, bool includePalestrantes = false)
+        public async Task<Evento[]> GetEventosByTemaAsync(string tema, bool includePalestrantes = false)
         {
             try
             {
